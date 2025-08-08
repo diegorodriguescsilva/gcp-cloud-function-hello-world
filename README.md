@@ -10,8 +10,6 @@ Objetivo é demonstrar como criar, implantar e executar uma função simples que
 - Node.js instalado (use `node -v` para verificar)
 - Google Cloud SDK instalado: [instalar aqui](https://cloud.google.com/sdk/docs/install)
 - VS Code instalado
-- Projeto criado no GCP
-- Conta de faturamento vinculada ao projeto (mesmo para uso gratuito)
 
 # Estrutura do projeto
 
@@ -21,15 +19,14 @@ gcp-cloud-function-hello-world/
 ├── package.json     # Dependências e metadata do projeto
 
 
-<br>
-
 ```
 
 # Arquivos:
 
-1 - Nesse repositório contém os arquivos ```index.js``
+1 - Nesse repositório contém os arquivos ```index.js```
 
 ```
+
 // Exporta a função chamada 'olaMundo'
 // Essa função será usada como ponto de entrada na Google Cloud Function
 
@@ -40,7 +37,7 @@ exports.olaMundo = (req, res) => {
 
 ```
 
-2 - Arquivo ```package.json``
+2 - Arquivo ```package.json```
 
 ```
 {
@@ -62,7 +59,6 @@ git clone <https://github.com/diegorodriguescsilva/gcp-cloud-function-hello-worl
 
 ```
 gcloud auth login
-
 ```
 
 3 - Selecione o projeto onde deseja implantar a função:
@@ -73,10 +69,8 @@ gcloud config set project SEU_ID_DO_PROJETO
 ````
 4 - Faça a verificação se a conta e o nome do projeto estão certos:
 
-````
-
+```
 gcloud config list
-
 ```
 # Ativando a API Cloud Functions
 
@@ -84,7 +78,6 @@ gcloud config list
 
 ```
 gcloud services enable cloudfunctions.googleapis.com
-
 ```
 # Fazer o deploy da função
 
